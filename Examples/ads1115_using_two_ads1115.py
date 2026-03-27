@@ -33,7 +33,7 @@ from ADS1115 import *
 I2C_ADDRESS_1 = 0x48
 I2C_ADDRESS_2 = 0x49
 
-i2c = I2C(0)
+i2c = I2C(0, scl=Pin(22), sda=Pin(21))
 adc_1 = ADS1115(I2C_ADDRESS_1, i2c=i2c)
 adc_2 = ADS1115(I2C_ADDRESS_2, i2c=i2c)
 
