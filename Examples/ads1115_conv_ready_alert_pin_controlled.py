@@ -18,7 +18,7 @@ from ADS1115 import *
 
 ADS1115_ADDRESS = 0x48
 
-i2c = I2C(0)
+i2c = I2C(0, scl=Pin(22), sda=Pin(21))
 adc = ADS1115(ADS1115_ADDRESS, i2c=i2c)
 
 alertPin = Pin(17, Pin.IN, Pin.PULL_DOWN)
