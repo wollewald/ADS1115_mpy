@@ -241,7 +241,7 @@ class ADS1115(object):
     def setSingleChannel(self, channel):
         if channel >= 4:
             return
-        self.setCompareChannels((ADS1115_COMP_0_GND + ADS1115_COMP_INC) * channel)
+        self.setCompareChannels((ADS1115_COMP_0_GND + __ADS1115_COMP_INC) * channel)
         
     def isBusy(self):
         currentConfReg = self.__getConfReg()
