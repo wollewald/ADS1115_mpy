@@ -5,4 +5,4 @@ metadata(
     license="MIT",
 )
 
-module("ADS1115.py")
+module("ADS1115.py", opt=3)
