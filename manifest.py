@@ -4,3 +4,5 @@ metadata(
     author="wollewald",
     license="MIT",
 )
+
+module("ADS1115.py")
